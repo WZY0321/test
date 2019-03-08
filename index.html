@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <form> 标签用于为用户输入创建 HTML 表单。
+        表单能够包含 input 元素，比如文本字段、复选框、单选框、提交按钮等等。
+        表单还可以包含 menus、textarea、fieldset、legend 和 label 元素。
+        表单用于向服务器传输数据。 -->
+    <form action="" method="post">
+        <!-- <table> 标签定义 HTML 表格。
+        简单的 HTML 表格由 table 元素以及一个或多个 tr、th 或 td 元素组成。
+        tr 元素定义表格行，th 元素定义表头，td 元素定义表格单元。
+        更复杂的 HTML 表格也可能包括 caption、col、colgroup、thead、tfoot 以及 tbody 元素。 -->
+        <table style="border:solid">
+			<tr>
+				<th>表头</th>
+				<th>表头</th>
+			</tr>
+            <tr>
+                <td>
+                    <!-- <label> 标签为 input 元素定义标注（标记）。
+                    label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
+                    <label> 标签的 for 属性应当与相关元素的 id 属性相同。 -->
+                    <label for="name">姓名</label>
+                    <!-- <input> 标签用于搜集用户信息。
+                    根据不同的 type 属性值，输入字段拥有很多种形式。输入字段可以是文本字段、复选框、掩码后的文本控件、单选按钮、按钮等等。 -->
+                    <input type="text" name="" id="name">
+                </td>
+                <td>
+                    <label for="class">班级</label>
+                    <input type="text" name="" id="class">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    性别
+                    <input type="radio" name="sex" id="male"><label for="male">男</label>
+                    <input type="radio" name="sex" id="female"><label for="female">女</label></td>
+                <td>
+                    爱好
+                    <input type="checkbox" name="" id="1">
+                    <label for="1">111</label>
+                    <input type="checkbox" name="" id="2">
+                    <label for="2">222</label>
+                    <input type="checkbox" name="" id="3">
+                    <label for="3">333</label>
+                </td>
+            <tr>
+                <td>
+                    问题
+                    <select name="" id="">
+                        <option value="111">111</option>
+                        <option value="222">222</option>
+                        <option value="333">333</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="" id="" cols="40" rows="10" placeholder="说些什么叭"></textarea>
+                </td>
+
+            </tr>
+        </table>
+        <input type="submit" value="确认">
+        <input type="reset" value="重置">
+    </form>
+</body>
+
+</html>
